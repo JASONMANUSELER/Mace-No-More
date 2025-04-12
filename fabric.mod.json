@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mace-no-more",
+	"version": "1.0.0",
+	"name": "Mace No More",
+	"description": "This Mod Removes The Mace From Your world Or Server",
+	"authors": [
+		"Jasonmanuseles"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets.mace-no-more/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.MaceNoMore"
+		],
+		"fabric-datagen": [
+			"name.modid.MaceNoMoreDataGenerator"
+		],
+		"client": [
+			"name.modid.MaceModClient"
+		]
+	},
+	"mixins": [
+		"mace-no-more.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "0.119.5"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
